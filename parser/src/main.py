@@ -7,7 +7,8 @@ import schedule
 from lxml.cssselect import CSSSelector
 from lxml.html import fromstring as html_fromstring
 from redis import Redis
-from settings import JOB_LINK_SELECTOR, REDIS_CHANNEL, REDIS_HOST, REDIS_PORT, URLS
+from settings import (JOB_LINK_SELECTOR, REDIS_CHANNEL, REDIS_HOST, REDIS_PORT,
+                      URLS)
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(message)s")

@@ -3,7 +3,8 @@ import logging
 
 import aioredis
 import async_timeout
-from settings import FILTERED_JOBS_CHANNEL, JOBS_SET, RAW_JOBS_CHANNEL, REDIS_URL
+from settings import (FILTERED_JOBS_CHANNEL, JOBS_SET, RAW_JOBS_CHANNEL,
+                      REDIS_URL)
 
 redis = aioredis.Redis.from_url(REDIS_URL, decode_responses=True)
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(message)s")
